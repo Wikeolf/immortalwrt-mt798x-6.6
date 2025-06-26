@@ -7,6 +7,12 @@ Compared to upstream, we allow to use (non-upstreamable) modifications/hacks to 
 
 Default login address: http://192.168.6.1 or http://immortalwrt.lan, username: __root__, password: _none_.
 
+## Experimental Feature
+KVM is enabled by default.
+Run muvirtbuild.sh to add the muvirt package for quick virtual machine setup and management.
+This may result in default device configuration packages not being included in the built firmware.
+Awaiting a fix. For now, please manually select these packages.SS
+
 ## Download
 Built firmware images are available for many architectures and come with a package selection to be used as WiFi home router. To quickly find a factory image usable to migrate from a vendor stock firmware to ImmortalWrt, try the *Firmware Selector*.
 
@@ -75,6 +81,7 @@ To build your own firmware you need a GNU/Linux, BSD or macOS system (case sensi
   - [ImmortalWrt Packages](https://github.com/immortalwrt/packages): Community repository of ported packages.
   - [OpenWrt Routing](https://github.com/openwrt/routing): Packages specifically focused on (mesh) routing.
   - [OpenWrt Video](https://github.com/openwrt/video): Packages specifically focused on display servers and clients (Xorg and Wayland).
+  - [μVirt](https://gitlab.com/traversetech/muvirt):Small virtualisation host for 64-bit ARM, built on top of OpenWRT
 
 ## Support Information
 For a list of supported devices see the [OpenWrt Hardware Database](https://openwrt.org/supported_devices)
